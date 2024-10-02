@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Test Data Generator</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      
+        <h1>Welcome to the Personal Test Data Generator!</h1>
+
+        <label for="apiSelector">Select Person Type:</label>
+        <select id="apiSelector">
+          <option value="single">Single Person</option>
+          <option value="multiple">Multiple People</option>
+        </select>
+
+        <div id="bulkOptions">
+          <label for="bulkAmount">Amount of People:</label>
+          <input type="number" id="bulkAmount" min="2" max="100" />
+        </div>
+
+        <button type="button" id="generatePersonButton" class="generate-btn">
+          Generate Person
+        </button>
+      
+
+      <div id="personDetails"></div>
+      <!-- This is where the person details will appear -->
+    </div>
+
+    <button id="scrollToTopButton" title="Go to top">Top</button>
+
+    <script src="/scripts/mainScript.js"></script>
+    <script src="/scripts/scrollToTop.js"></script>
+  </body>
+</html>
